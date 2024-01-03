@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<h2>O'chirish</h2>
+<form method="post">{% csrf_token %}
+    <p>{{pro.name}} Sarlavhali kursni o'chirishni hohlaysizmi ?</p>
+    <button type="submit" class="btn btn-danger">Tasdiqlayman</button>
+</form>
+
+{% endblock content %}
